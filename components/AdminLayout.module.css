@@ -1,0 +1,47 @@
+.adminWrapper {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 3rem 1.5rem;
+}
+
+.adminContent {
+  max-width: 720px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.08);
+}
+
+.adminContent h1 {
+  margin-bottom: 0.75rem;
+}
+
+.adminContent p {
+  margin-bottom: 1.5rem;
+  color: #475569;
+}
+
+.adminContent form {
+  display: grid;
+  gap: 1rem;
+}
+
+.adminContent input[type='file'] {
+  padding: 0.7rem;
+}
+
+.adminContent button {
+  padding: 0.95rem 1.2rem;
+  background: #2563eb;
+  border: none;
+  border-radius: 999px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.adminContent button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

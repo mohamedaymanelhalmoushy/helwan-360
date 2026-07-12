@@ -1,0 +1,67 @@
+.heroSection {
+  position: relative;
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: linear-gradient(180deg, rgba(9, 32, 65, 0.96), rgba(9, 32, 65, 0.86));
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(1, 20, 48, 0.7), rgba(1, 22, 45, 0.4));
+}
+
+.heroContent {
+  position: relative;
+  max-width: 720px;
+  text-align: center;
+  z-index: 1;
+}
+
+.heroContent h1 {
+  font-size: clamp(2.8rem, 4vw, 4.2rem);
+  margin-bottom: 1rem;
+  line-height: 1.05;
+}
+
+.heroContent p {
+  margin: 0 auto 2rem;
+  max-width: 42rem;
+  opacity: 0.88;
+}
+
+.suptitle {
+  display: inline-block;
+  margin-bottom: 1rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.95rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.primaryButton {
+  background: #38bdf8;
+  color: #062d57;
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  color: white;
+}

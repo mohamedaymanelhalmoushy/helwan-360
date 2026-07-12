@@ -1,0 +1,232 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-family: Inter, system-ui, sans-serif;
+    background: #020617;
+    color: #e2e8f0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+  }
+
+  body {
+    line-height: 1.6;
+    background: radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 30%),
+      radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.12), transparent 22%),
+      #020617;
+    color: #e2e8f0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  main {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+}
+
+@layer utilities {
+  .backdrop-blur-30 {
+    backdrop-filter: blur(30px);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.16);
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 0 1rem 2rem;
+  }
+}
+
+.admin-wrapper {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 3rem 1.5rem;
+}
+
+.admin-content {
+  max-width: 780px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.08);
+}
+
+.admin-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.admin-form input[type='password'],
+.admin-form input[type='file'] {
+  padding: 0.9rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.85rem;
+}
+
+.admin-form button {
+  width: fit-content;
+  padding: 0.95rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-message {
+  color: #b91c1c;
+}
+
+.image-list {
+  margin-top: 2rem;
+}
+
+.image-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.image-list li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.image-list a {
+  color: #2563eb;
+}
+
+.tour-page {
+  padding: 3rem 1.5rem;
+}
+
+.tour-hero,
+.tour-list,
+.tour-viewer {
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
+}
+
+.tour-hero h1,
+.tour-list h2,
+.tour-viewer h2 {
+  margin-top: 0;
+}
+
+.tour-images {
+  display: grid;
+  gap: 1rem;
+}
+
+.tour-image-card {
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.tour-image-card:hover {
+  transform: translateY(-2px);
+}
+
+.tour-image-card span {
+  display: block;
+  color: #475569;
+}
+
+.panorama {
+  width: 100%;
+  min-height: 520px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: #0f172a;
+  position: relative;
+}
+
+/* Force Photo Sphere Viewer to fill its parent wrapper */
+.panorama .psv-container,
+.panorama .psv-canvas-container,
+.panorama .psv-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 520px !important;
+}
+
+.panorama .psv-container {
+  position: relative;
+  min-height: 520px !important;
+}
+
+.panorama .psv-canvas-container {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.panorama .psv-canvas {
+  display: block !important;
+  object-fit: cover !important;
+}
+
+.panorama .psv-navbar,
+.panorama .psv-controls {
+  width: 100% !important;
+}

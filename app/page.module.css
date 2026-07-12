@@ -1,0 +1,41 @@
+.main {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.ctaSection {
+  background: #0f172a;
+  color: white;
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+}
+
+.ctaContent {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 1rem 1.75rem;
+  border-radius: 999px;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .main {
+    padding: 0 1rem 2rem;
+  }
+
+  .ctaSection {
+    padding: 2rem 1rem;
+  }
+}
