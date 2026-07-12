@@ -14,7 +14,7 @@ import {
   CompassIcon,
 } from './icons';
 
-const navItems = [
+export const navItems = [
   { label: 'Home', href: '/', icon: HomeIcon },
   { label: 'Buildings', href: '/buildings', icon: BuildingsIcon },
   { label: 'Campus Map', href: '/', icon: MapIcon },
