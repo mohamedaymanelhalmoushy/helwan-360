@@ -39,7 +39,7 @@ export type Building = {
   floorList: Floor[];
 };
 
-const enginePanorama = '/uploads/sphere.jpg';
+const enginePanorama = '/images/sphere.jpg';
 
 const groundFloorTour: Room[] = [
   {
